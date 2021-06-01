@@ -22,9 +22,9 @@ Main_length =  Users_Guess;
 for (i = 0; i <= Main_length; i++) {
   if (User_Guess == Main_length) {
   Users_Guess += 1 [i]
-  console.log("well done")
+  res.send("well done")
 } else {
-  console.log("Incorrect");
+  res.send("Incorrect");
 }}
 
 
