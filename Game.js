@@ -13,8 +13,20 @@ app.get('/erica', (req, res) => {
 
 app.listen(port, () => console.log('Server is listening on port', + port) );
 
-var Guessing_word = ["e","r","i","c","a"];
+var Main_word = ["e","r","i","c","a"];
 var Users_Guess = ["","","","",""];
+var Main_length = Main_word.length;
 
-console.log(Users_Guess);
+Main_length =  Users_Guess;
+
+for (i=0; i <= Main_length; 1++) {
+  if (User_Guess == Main_length) {
+  Users_Guess += 1 [i]
+  console.log("well done")
+} else {
+  console.log("Incorrect");
+}}
+
+
+
 
