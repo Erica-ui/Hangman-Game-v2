@@ -16,5 +16,5 @@ app.listen(port, () => console.log('Server is listening on port', + port) );
 var Guessing_word = ["e","r","i","c","a"];
 var Users_Guess = ["","","","",""];
 
-
+console.log(Users_Guess);
 
