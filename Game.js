@@ -19,7 +19,7 @@ var Main_length = Main_word.length;
 
 Main_length =  Users_Guess;
 
-for (i=0; i <= Main_length; 1++) {
+for (i = 0; i <= Main_length; i++) {
   if (User_Guess == Main_length) {
   Users_Guess += 1 [i]
   console.log("well done")
