@@ -20,7 +20,9 @@ app.get('/erica', (req, res) => {
 app.listen(port, () => console.log('Server is listening on port', + port) );
 
 
-//first I began my assigning my variables for to guessing word and the users guesses//
+/*first I began my assigning my variables for to guessing word and the users guesses. 
+the 'User_Guess' was created adding no current value as it can also be read as undefined
+on the JavaScript system*/
 var Main_word = ["e","r","i","c","a"];
 var Users_Guess = ["","","","",""];
 var Main_length = Main_word.length;
