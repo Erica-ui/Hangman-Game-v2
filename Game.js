@@ -17,4 +17,4 @@ var Guessing_word = ["e","r","i","c","a"];
 var Users_Guess = ["","","","",""];
 
 var Guessing_word = word.length;
-res.send(Guessing_word);
+
