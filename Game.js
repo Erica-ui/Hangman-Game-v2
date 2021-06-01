@@ -9,9 +9,13 @@ app.get('/', (req, res) => {
 })
 
 app.get('/erica', (req, res) => {
+  var i = 1;
+    max = 5;
+    for (; i <= max; i++) {
+    res.setHeader('Content-Type', 'text/html');
   res.write('Hello Erica');
   res.end();
-})
+}})
 
 app.listen(port, () => console.log('Server is listening on port', + port) );
 
