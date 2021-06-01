@@ -4,11 +4,13 @@ const port = 3000
 const app = express();
 
 app.get('/', (req, res) => {
-  res.send('Hello World');
+  res.write('Hello World');
+  res.end();
 })
 
 app.get('/erica', (req, res) => {
-  res.send('Hello Erica');
+  res.write('Hello Erica');
+  res.end();
 })
 
 app.listen(port, () => console.log('Server is listening on port', + port) );
