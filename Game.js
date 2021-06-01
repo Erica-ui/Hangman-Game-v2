@@ -19,15 +19,22 @@ app.get('/erica', (req, res) => {
 
 app.listen(port, () => console.log('Server is listening on port', + port) );
 
+
+//first I began my assigning my variables for to guessing word and the users guesses//
 var Main_word = ["e","r","i","c","a"];
 var Users_Guess = ["","","","",""];
 var Main_length = Main_word.length;
 
+/*I then assigned the users guess to be the same as the guessing word by applying tnhe word
+length to be the same*/ 
 Main_length =  Users_Guess;
 
-User_Guess = prompt 
+/*in order fot the user to actually play the game i had made sure to apply a prompt 
+so that the user could interact with my game*/
+User_Guess = prompt;
 
-
+/* the while loop was created to take action mainly if the user was to get the answer
+right. if they had, then 1 word would be added to the 'User_Guess' and then the loop would continue*/
 for (i = 0; i <= Main_length; i++) {
   if (User_Guess == Main_length) {
   Users_Guess += 1 [i]
@@ -39,9 +46,15 @@ for (i = 0; i <= Main_length; i++) {
     break;
 }}
 
+/* here i had assigned a 'guess' for the amount of times a use guesses and a 'count' which is the 
+amount of times a user gets to guess. in this case the guess and count would be classified as the 
+same value*/
 var guess = 5 ;
 var count = 5 ;
 
+
+/*in this part of the code, i had implemented 5 for loops for the process of the user getting their 
+answer wrong in 5 different stages (considering the max count is 5*/
 for (i = 4, i <= guess, i <= count; i++;) {
   if (guess == count && Users_Guess != Main_length); 
   count += [i]
@@ -96,7 +109,10 @@ for (i = 0, i <= guess, i <= count; i++;) {
 }
 
 
-  
+/* for the final part of this process, i had established text that the reciever would recieve
+if they had won of lost the game*/
+if (Main_word === Users_Guess)
+res.write('Congratulations' + 'You win')
 
-
-
+elseif (Main_word !== Users_Guess)
+res.write("Oh no!" + "<br>" + "You've Lost")
